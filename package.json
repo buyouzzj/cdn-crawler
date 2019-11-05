@@ -1,0 +1,17 @@
+{
+  "name": "write-source",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "url": "npm run clean && node index.js",
+    "clean": "rm -rf public/*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "request": "^2.88.0"
+  }
+}
