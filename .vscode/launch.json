@@ -9,7 +9,7 @@
       "request": "launch",
       "name": "启动程序",
       "program": "${workspaceFolder}\\index.js",
-      "args": ["react", "react-dom", "antd"],
+      "args": ["iview"],
     },
     {
       "type": "node",

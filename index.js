@@ -80,7 +80,6 @@ function writeFileSync (body, pack) {
 function writeContent (asset, file, pack) {
   return new Promise((resolve, reject) => {
     request(`${STATIC_FILE_DIR}/${pack}/${asset.version}/${file}`, (err, response, body) => {
-      console.log(body, typeof(body))
       if (body === undefined || body.search('<center><h1>503 Service Temporarily Unavailable</h1></center>') !== -1) {
         writeContent(asset, file, pack)
         return
